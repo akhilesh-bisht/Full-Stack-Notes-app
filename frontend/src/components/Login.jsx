@@ -49,7 +49,7 @@ function Login() {
                   Email
                 </label>
                 <input
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -57,7 +57,7 @@ function Login() {
                 />
               </div>
               {/* password */}
-              <div className="mb-4">
+              <div className="mb-5">
                 <label className="block mb-2 font-semibold" htmlFor="">
                   Password
                 </label>
@@ -72,7 +72,7 @@ function Login() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white hover:bg-blue-900 duration-300 rounded-xl font-semibold p-3"
+                className="w-full bg-blue-500 text-white hover:bg-blue-900 duration-300 rounded-xl font-semibold p-3"
               >
                 Login
               </button>

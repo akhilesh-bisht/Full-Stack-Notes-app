@@ -44,15 +44,15 @@ function Signup() {
       <div>
         <div className="flex h-screen items-center justify-center bg-gray-100">
           <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold mb-5 text-center">Signup</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center">Signup</h2>
             <form onSubmit={handleRegister}>
               {/* username */}
               <div className="mb-4">
-                <label className="block mb-2 font-semibold" htmlFor="">
+                <label className="block mb-3 font-semibold" htmlFor="">
                   Username
                 </label>
                 <input
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-3 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   type="text"
                   value={username}
                   onChange={(e) => setUserName(e.target.value)}
@@ -65,7 +65,7 @@ function Signup() {
                   Email
                 </label>
                 <input
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
