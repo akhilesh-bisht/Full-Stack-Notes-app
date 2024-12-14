@@ -150,7 +150,7 @@ function Home() {
               </div>
               <button
                 onClick={() => todoDelete(todo._id)}
-                className="text-red-500 hover:text-red-800 duration-300"
+                className="text-red-600 hover:text-red-800 duration-300"
               >
                 Delete
               </button>
