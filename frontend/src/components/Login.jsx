@@ -76,7 +76,7 @@ function Login() {
               >
                 Login
               </button>
-              <p className="mt-4 text-center text-gray-600">
+              <p className="mt-4 text-center text-gray-500">
                 New user?{" "}
                 <Link to="/signup" className="text-blue-600 hover:underline">
                   Signup
