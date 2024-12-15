@@ -73,7 +73,7 @@ function Signup() {
                 />
               </div>
               {/* password */}
-              <div className="mb-3">
+              <div className="mb-4">
                 <label className="block mb-2 font-semibold" htmlFor="">
                   Password
                 </label>
