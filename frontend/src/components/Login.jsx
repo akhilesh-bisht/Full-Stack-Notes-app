@@ -72,7 +72,7 @@ function Login() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white hover:bg-blue-900 duration-300 rounded-xl font-semibold p-3"
+                className="w-full bg-blue-600 text-white hover:bg-blue-900 duration-300 rounded-xl font-semibold p-3"
               >
                 Login
               </button>
