@@ -8,8 +8,13 @@ import cookieParser from "cookie-parser";
 const app = express();
 dotenv.config();
 
-const PORT = process.env.PORT || 4002;
+const PORT = process.env.PORT || 8000;
 const DB_URI = process.env.MONGODB_URI;
+
+console.log("PORT:", process.env.PORT);
+console.log("DB_URI:", process.env.MONGODB_URI);
+console.log("JWT_SECRET:", process.env.JWT_SECRET_KEY);
+console.log("FRONTEND_URL:", process.env.FRONTEND_URL);
 
 // middlewares
 app.use(express.json());
@@ -24,12 +29,17 @@ app.use(
 );
 
 // Database connection code
-try {
-  await mongoose.connect(DB_URI);
-  console.log("Connected to MongoDB");
-} catch (error) {
-  console.log(error);
-}
+(async () => {
+  try {
+    await mongoose.connect(DB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("Database connection failed:", error);
+  }
+})();
 
 // routes
 app.use("/todo", todoRoute);
