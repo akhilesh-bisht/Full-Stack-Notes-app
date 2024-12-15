@@ -65,7 +65,7 @@ function Signup() {
                   Email
                 </label>
                 <input
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -73,7 +73,7 @@ function Signup() {
                 />
               </div>
               {/* password */}
-              <div className="mb-4">
+              <div className="mb-3">
                 <label className="block mb-2 font-semibold" htmlFor="">
                   Password
                 </label>
